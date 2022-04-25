@@ -31,17 +31,17 @@ while True:
     cprint("""
                                                  Welcome To Binary Menu
            
-              -------------------------------------------       ---------------------------------------- 
-              | OPTIONS |            SERVICES           |       | OPTIONS |         SERVICES           |
-              -------------------------------------------       ----------------------------------------
-              |    1    |             DOCKER            |       |    5    |        NETWORKING          |
-              -------------------------------------------       ----------------------------------------
-              |    2    |               AWS             |       |    6    |          ANSIBLE           |
-              -------------------------------------------       ----------------------------------------
-              |    3    |               LVM             |       |    7    |         WEBSERVER          |
-              -------------------------------------------       ----------------------------------------
-              |    4    |              HADOOP           |       |    8    |           LINUX            |
-              -------------------------------------------       ----------------------------------------
+              -------------------------------------------   
+              | OPTIONS |            SERVICES           |  
+              -------------------------------------------  
+              |    1    |             DOCKER            |       
+              -------------------------------------------       
+              |    2    |               AWS             |       
+              -------------------------------------------       
+              |    3    |               LVM             |   
+              -------------------------------------------       
+              |    4    |              HADOOP           |   
+              -------------------------------------------   
            """, 'yellow')
 
     cprint("\n\t\t\t for example if you want to choose LVM than type 3 (same as options)", "yellow")
@@ -234,7 +234,7 @@ while True:
                 if int(img) ==1:
                     print("Enter Your Key name: ",end ="")
                     key = input()
-                    os.system("aws ec2 run-instances --image-id ami-0e306788ff2473ccb --subnet-id subnet-ba5b5cd2 --instance-type t2.micro --key-name {} --security-group-ids sg-0c111e5b44f074df9 --count 1".format(key))
+                    os.system("aws ec2 run-instances --image-id ami-0d2986f2e8c0f7d01 --subnet-id  subnet-0eb6a430b8c1d1842 --instance-type t2.micro --key-name {} --security-group-ids sg-031cdd4669bea4884 --count 1".format(key))
                 elif int(img) == 2:
                     print("Enter Your Key name: ",end ="")
                     key = input()
